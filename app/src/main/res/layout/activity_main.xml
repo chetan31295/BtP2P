@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.apps.iankchristie.bttictactoe.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlayingWith"
+        android:layout_weight="0.05"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_weight="0.75">
+
+        <ImageButton
+            android:layout_height="128dp"
+            android:layout_width="128dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton00"
+            android:onClick="coordinateClick"
+            android:tag="00"
+            android:layout_weight="1" />
+        <ImageButton
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton01"
+            android:onClick="coordinateClick"
+            android:tag="01"
+            android:layout_weight="1"
+            android:layout_height="128dp"
+            android:layout_width="128dp"/>
+        <ImageButton
+            android:layout_height="128dp"
+            android:layout_width="128dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton02"
+            android:onClick="coordinateClick"
+            android:tag="02"
+            android:layout_weight="1" />
+        <ImageButton
+            android:layout_height="128dp"
+            android:layout_width="128dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton10"
+            android:onClick="coordinateClick"
+            android:tag="10"
+            android:layout_weight="1" />
+        <ImageButton
+            android:layout_height="128dp"
+            android:layout_width="128dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton11"
+            android:onClick="coordinateClick"
+            android:tag="11"
+            android:layout_weight="1" />
+        <ImageButton
+            android:layout_height="128dp"
+            android:layout_width="128dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton12"
+            android:onClick="coordinateClick"
+            android:tag="12"
+            android:layout_weight="1" />
+        <ImageButton
+            android:layout_height="128dp"
+            android:layout_width="128dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton20"
+            android:onClick="coordinateClick"
+            android:tag="20"
+            android:layout_weight="1" />
+        <ImageButton
+            android:layout_height="128dp"
+            android:layout_width="128dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton21"
+            android:onClick="coordinateClick"
+            android:tag="21"
+            android:layout_weight="1" />
+        <ImageButton
+            android:layout_height="128dp"
+            android:layout_width="128dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButton22"
+            android:onClick="coordinateClick"
+            android:tag="22"
+            android:layout_weight="1" />
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/winner"
+        android:layout_weight="0.12" />
+    <Button
+        android:text="@string/new_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_game"
+        android:onClick="newGameClick"/>
+
+</LinearLayout>
+

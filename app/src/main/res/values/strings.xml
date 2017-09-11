@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BtTicTacToe</string>
+    <string name="action_settings">Settings</string>
+    <string name="NO_BLUETOOTH_CAPABILITY">No Bluetooth Capability</string>
+    <string name="NO_BLUETOOTH_CAPABILITY_MESSAGE">This device does not have bluetooth capabilities.</string>
+    <string name="NO_CONNECTED_DEVICE">No Connected Devices</string>
+    <string name="MULTIPLE_CONNECTED_DEVICE">Multiple Connected Devices</string>
+    <string name="CONNECTED_DEVICES_MESSAGE">Because the developer is lazy, he didn\'t want to implement selecting a Bluetooth device programatically. So the UI will remain inactive until you pair your device with exactly 1 device.</string>
+    <string name="win">You Win!!!</string>
+    <string name="lose">You Lose, You Suck</string>
+    <string name="ok">OK</string>
+    <string name="cats_game">Cat\'s Game</string>
+    <string name="new_game">New Game</string>
+</resources>
